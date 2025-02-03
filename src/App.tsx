@@ -16,7 +16,7 @@ function App() {
   const [url, setUrl] = useState("");
   const [questions, setQuestions] = useState<QuestionWithAnswer[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [isRTL, setIsRTL] = useState(true); // Default to true for Hebrew
+  const [isRTL] = useState(true); // Default to true for Hebrew
 
   const handleGenerateWidget = async () => {
     setIsLoading(true);
